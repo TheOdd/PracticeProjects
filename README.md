@@ -9,5 +9,3 @@ Repository used for all source code and projects that are created purely for pra
 |                                         Folder                                        |                           Project                           |
 |:-------------------------------------------------------------------------------------:|:-----------------------------------------------------------:|
 | [Keyboard-Row/](https://github.com/TheOdd/PracticeProjects/tree/master/Keyboard-Row/) | [Keyboard Row](https://leetcode.com/problems/keyboard-row/) |
-|                                                                                       |                                                             |
-|                                                                                       |                                                             |
