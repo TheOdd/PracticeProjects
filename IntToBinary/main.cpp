@@ -1,13 +1,15 @@
+// This program will take an integer input and output its binary form.
+
 #include <iostream>
 #include <string>
 
 using namespace std;
 
-string selection;
-string result;
-string remainderString;
-int intSelection;
-int remainder;
+string selection; // Storing input from user
+string result; // Storing binary characters being added into one string
+string remainderString; // Variable to hold string version of remainder variable (int)
+int intSelection; // Variable to hold int version of selection variable (string)
+int remainder; // Variable to hold modulus output (remainder/binary value of math operation)
 
 int main()
 {
@@ -15,14 +17,19 @@ int main()
     cin >> selection;
     intSelection = stoi(selection);
     while (intSelection != 1)
+    /* Checks for two things:
+    1) If it is 1, then the binary form is just 1, so don't do anything to it.
+    2) If we have divided it enough to equal 1, we are done with our loop. */
     {
-        remainder = intSelection % 2;
-        remainderString = to_string(remainder);
-        result.insert(0, remainderString);
-        intSelection /= 2;
+        remainder = intSelection % 2; // Getting the remainder (1 or 0), which directly translates to a binary symbol.
+        remainderString = to_string(remainder); // Converting the above variable to a string for printing compatibility.
+        result.insert(0, remainderString); // Adding that string to the beginning of our result string.
+        intSelection /= 2; // After we're done with getting the binary value, we half it to move to the next operation.
     }
+    /* Integers cannot go into decimals, so we cannot check for != 0.5
+    at the while function, so we do the whole thing one more time here. */
     remainder = intSelection % 2;
     remainderString = to_string(remainder);
     result.insert(0, remainderString);
-    cout << result << endl;
+    cout << result << endl; // Printing final result.
 }
