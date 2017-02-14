@@ -6,4 +6,8 @@ Repository used for all source code and projects that are created purely for pra
 
 ## List of LeetCode project folder and links to their corresponding problems.
 
- - [Keyboard-Row/](https://github.com/TheOdd/PracticeProjects/tree/master/Keyboard-Row/) - [Keyboard Row](https://leetcode.com/problems/keyboard-row/)
+|                                         Folder                                        |                           Project                           |
+|:-------------------------------------------------------------------------------------:|:-----------------------------------------------------------:|
+| [Keyboard-Row/](https://github.com/TheOdd/PracticeProjects/tree/master/Keyboard-Row/) | [Keyboard Row](https://leetcode.com/problems/keyboard-row/) |
+|                                                                                       |                                                             |
+|                                                                                       |                                                             |
