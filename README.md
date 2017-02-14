@@ -4,7 +4,7 @@ Repository used for all source code and projects that are created purely for pra
 
 ***NOTE***: This will most likely hold a lot of project files for [LeetCode](https://leetcode.com/) problems.
 
-## List of LeetCode project folders, links to their corresponding problems, and descriptions.
+## List of LeetCode project folders, corresponding problems, & descriptions.
 
 |                                            Folder                                            |                               Project                               |                                                       Description                                                       |
 |:--------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------:|
