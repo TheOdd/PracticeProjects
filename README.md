@@ -13,6 +13,7 @@ Repository used for all source code and projects that are created purely for pra
 
 ## List of personal project folders and descriptions.
 
-|                                            Folder                                            |                                                       Description                                                       |
-|:--------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------:|
-| [IntToBinary/](https://github.com/TheOdd/PracticeProjects/tree/master/IntToBinary)           | A program that takes an integer as an input and outputs the binary form of that integer.                                |
+|                                            Folder                                                                      |                                                       Description                                                       |
+|:----------------------------------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------:|
+| [IntToBinary/](https://github.com/TheOdd/PracticeProjects/tree/master/IntToBinary)                                     | A program that takes an integer as an input and outputs the binary form of that integer.                                |
+| [Chemistry-Formula-Solver/](https://github.com/TheOdd/PracticeProjects/tree/master/Chemistry-Formula-Solver)           | A program that takes three of four variables of 5 different chemistry gas laws and outputs the missing variable.        |
