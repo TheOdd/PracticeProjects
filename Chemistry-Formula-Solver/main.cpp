@@ -27,26 +27,22 @@ int selectLaw() {
     cout << setprecision(4);
     cin >> x;
     system("clear");
+    invalid = false;
     if (x == "1") {
         cout << boyOperation() << endl;
         cin.get();
-        invalid = false;
     } else if (x == "2") {
         cout << charOperation() << endl;
         cin.get();
-        invalid = false;
     } else if (x == "3") {
         cout << lusOperation() << endl;
         cin.get();
-        invalid = false;
     } else if (x == "4") {
         cout << avogOperation() << endl;
         cin.get();
-        invalid = false;
     } else if (x == "5") {
         cout << idealOperation() << endl;
         cin.get();
-        invalid = false;
     } else {
         invalid = true;
         selectLaw();
