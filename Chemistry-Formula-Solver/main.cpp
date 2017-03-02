@@ -21,7 +21,7 @@ int selectLaw() {
     "4.) Avogadro's Principle - V1/n1 = V2/n2" << endl <<
     "5.) Ideal Gas Law - PV = nRT" << endl;
     if(invalid) {
-        cout << "Please enter a valid option!\n\n";
+        cout << "Please enter a valid option!" << endl << endl;
     }
     cout << fixed << showpoint;
     cout << setprecision(4);
