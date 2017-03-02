@@ -23,35 +23,27 @@ int selectLaw() {
     if(invalid) {
         cout << "Please enter a valid option!\n\n";
     }
+    cout << fixed << showpoint;
+    cout << setprecision(4);
     cin >> x;
     system("clear");
     if (x == "1") {
-        cout << fixed << showpoint;
-        cout << setprecision(4);
         cout << boyOperation() << endl;
         cin.get();
         invalid = false;
     } else if (x == "2") {
-        cout << fixed << showpoint;
-        cout << setprecision(4);
         cout << charOperation() << endl;
         cin.get();
         invalid = false;
     } else if (x == "3") {
-        cout << fixed << showpoint;
-        cout << setprecision(4);
         cout << lusOperation() << endl;
         cin.get();
         invalid = false;
     } else if (x == "4") {
-        cout << fixed << showpoint;
-        cout << setprecision(4);
         cout << avogOperation() << endl;
         cin.get();
         invalid = false;
     } else if (x == "5") {
-        cout << fixed << showpoint;
-        cout << setprecision(4);
         cout << idealOperation() << endl;
         cin.get();
         invalid = false;
