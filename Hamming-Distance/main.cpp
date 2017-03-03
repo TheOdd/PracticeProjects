@@ -2,8 +2,6 @@
 
 #include <iostream>
 
-using namespace std;
-
 int hammingDistance(int x, int y) // Start hammingDistance function that takes two integers.
 {
     int dist = 0; // Declaring variable for end result hamming distance.
@@ -22,6 +20,6 @@ int hammingDistance(int x, int y) // Start hammingDistance function that takes t
 int main()
 {
     int numberInput[1]; // Create integer array storing 2 variables.
-    cin >> numberInput[0] >> numberInput[1]; // Get two values from one input seperated by space.
-    cout << hammingDistance(numberInput[0], numberInput[1]) << endl; // Output hamming distance using the two inputted values.
+    std::cin >> numberInput[0] >> numberInput[1]; // Get two values from one input seperated by space.
+    std::cout << hammingDistance(numberInput[0], numberInput[1]) << std::endl; // Output hamming distance using the two inputted values.
 }
