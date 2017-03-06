@@ -1,6 +1,8 @@
 #include <iostream>
 #include <iomanip>
 
+#define PRECISION_LEVEL 4
+
 std::string x;
 bool invalid = false;
 
@@ -22,7 +24,7 @@ int selectLaw() {
         std::cout << "Please enter a valid option!" << std::endl << std::endl;
     }
     std::cout << std::fixed << std::showpoint;
-    std::cout << std::setprecision(4);
+    std::cout << std::setprecision(PRECISION_LEVEL);
     std::cin >> x;
     system("clear");
     invalid = false;
@@ -271,14 +273,14 @@ double idealOperation() {
         std::cout << "Please enter a valid option!" << std::endl;
         idealOperation();
     }
-    std::cout << "PV = nRT" << std::endl << "Which variable are you solving for?" << std::endl;
-    std::cin >> variableStr;
-    system("clear");
     double R;
     if (x == "1")
         R = 0.0821;
     else
         R = 8.3150;
+    std::cout << "PV = nRT" << std::endl << "Which variable are you solving for?" << std::endl;
+    std::cin >> variableStr;
+    system("clear");
     if (variableStr == "P") {
         std::cout << "What is the value of V?" << std::endl;
         std::cin >> V;
