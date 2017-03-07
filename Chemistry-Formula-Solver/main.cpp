@@ -1,5 +1,6 @@
 #include <iostream>
 #include <iomanip>
+#include <vector>
 
 std::string x;
 bool invalid = false;
@@ -101,53 +102,48 @@ double boyOperation() {
 }
 
 double charOperation() {
+    std::vector<std::string> stringOptions = {"V1", "V2", "T1", "T2"};
+    std::vector<double> options = {0, 0, 0, 0};
+    int V1 = 0, V2 = 1, T1 = 2, T2 = 3;
+    int target;
     std::string variableStr;
-    double V1;
-    double V2;
-    double T1;
-    double T2;
+    
     std::cout << "V1/T1 = V2/T2" << std::endl << "Which variable are you solving for?" << std::endl;
     std::cin >> variableStr;
     system("clear");
-    if (variableStr == "V1") {
-        std::cout << "What is the value of T1 in Kelvin?" << std::endl;
-        std::cin >> T1;
-        std::cout << "What is the value of V2?" << std::endl;
-        std::cin >> V2;
-        std::cout << "What is the value of T2 in Kelvin?" << std::endl;
-        std::cin >> T2;
-        V1 = (V2/T2)*T1;
-        return V1;
-    } else if (variableStr == "V2") {
-        std::cout << "What is the value of T1 in Kelvin?" << std::endl;
-        std::cin >> T1;
-        std::cout << "What is the value of T2 in Kelvin?" << std::endl;
-        std::cin >> T2;
-        std::cout << "What is the value of V1?" << std::endl;
-        std::cin >> V1;
-        V2 = (V1/T1)*T2;
-        return V2;
-    } else if (variableStr == "T1") {
-        std::cout << "What is the value of T2 in Kelvin?" << std::endl;
-        std::cin >> T2;
-        std::cout << "What is the value of V1?" << std::endl;
-        std::cin >> V1;
-        std::cout << "What is the value of V2?" << std::endl;
-        std::cin >> V2;
-        T1 = V1/(V2/T2);
-        return T1;
-    } else if (variableStr == "T2") {
-        std::cout << "What is the value of T1 in Kelvin?" << std::endl;
-        std::cin >> T1;
-        std::cout << "What is the value of V1?" << std::endl;
-        std::cin >> V1;
-        std::cout << "What is the value of V2?" << std::endl;
-        std::cin >> V2;
-        T2 = V2/(V1/T1);
-        return T2;
-    } else {
-        std::cout << "Please enter a valid option!" << std::endl;
-        charOperation();
+    bool invalid = true;
+    while (invalid) {
+        for (int i = 0; i < 4; i++) {
+            if (variableStr == stringOptions[i])
+                invalid = false;
+        }
+        if (invalid) {
+            system("clear");
+            std::cout << "Please enter a valid option!" << std::endl;
+            std::cin >> variableStr;
+        }
+    }
+    for (int i = 0; i < 4; i++) {
+        if (variableStr == stringOptions[i]) {
+            target = i;
+            continue;
+        }
+        else {
+            std::cout << "What is the value of " << stringOptions[i] << "?" << std::endl;
+            std::cin >> options[i];
+        }
+    }
+    if (target == V1) {
+        return (options[V2]/options[T2])*options[T1];
+    }
+    else if (target == V2) {
+        return (options[V1]/options[T1])*options[T2];
+    }
+    else if (target == T1) {
+        return options[V1]/(options[V2]/options[T2]);
+    }
+    else if (target == T2) {
+        return options[V2]/(options[V1]/options[T1]);
     }
     return 0;
 }
