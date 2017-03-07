@@ -4,6 +4,9 @@
 
 std::string x;
 bool invalid = false;
+int target;
+std::string variableStr;
+std::vector<double> options = {0, 0, 0, 0};
 
 double boyOperation();
 double charOperation();
@@ -103,11 +106,7 @@ double boyOperation() {
 
 double charOperation() {
     std::vector<std::string> stringOptions = {"V1", "V2", "T1", "T2"};
-    std::vector<double> options = {0, 0, 0, 0};
     int V1 = 0, V2 = 1, T1 = 2, T2 = 3;
-    int target;
-    std::string variableStr;
-    
     std::cout << "V1/T1 = V2/T2" << std::endl << "Which variable are you solving for?" << std::endl;
     std::cin >> variableStr;
     system("clear");
