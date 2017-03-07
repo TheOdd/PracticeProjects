@@ -1,8 +1,6 @@
 #include <iostream>
 #include <iomanip>
 
-#define PRECISION_LEVEL 4
-
 std::string x;
 bool invalid = false;
 
@@ -24,7 +22,7 @@ int selectLaw() {
         std::cout << "Please enter a valid option!" << std::endl << std::endl;
     }
     std::cout << std::fixed << std::showpoint;
-    std::cout << std::setprecision(PRECISION_LEVEL);
+    std::cout << std::setprecision(4);
     std::cin >> x;
     system("clear");
     invalid = false;
