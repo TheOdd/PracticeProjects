@@ -122,14 +122,11 @@ double charOperation() {
     }
     if (target == V1) {
         return (options[V2]/options[T2])*options[T1];
-    }
-    else if (target == V2) {
+    } else if (target == V2) {
         return (options[V1]/options[T1])*options[T2];
-    }
-    else if (target == T1) {
+    } else if (target == T1) {
         return options[V1]/(options[V2]/options[T2]);
-    }
-    else if (target == T2) {
+    } else if (target == T2) {
         return options[V2]/(options[V1]/options[T1]);
     }
     return 0;
@@ -165,14 +162,11 @@ double lusOperation() {
     }
     if (target == P1) {
         return (options[P2]/options[T2])*T1;
-    }
-    else if (target == P2) {
+    } else if (target == P2) {
         return (options[P1]/options[T1])*T2;
-    }
-    else if (target == T1) {
+    } else if (target == T1) {
         return options[P1]/(options[P2]/options[T2]);
-    }
-    else if (target == T2) {
+    } else if (target == T2) {
         return options[P2]/(options[P1]/options[T1]);
     }
     return 0;
@@ -208,14 +202,11 @@ double avogOperation() {
     }
     if (target == V1) {
         return (options[V2]/options[n2])*options[n1];
-    }
-    else if (target == V2) {
+    } else if (target == V2) {
         return (options[V1]/options[n1])*options[n2];
-    }
-    else if (target == n1) {
+    } else if (target == n1) {
         return options[V1]/(options[V2]/options[n2]);
-    }
-    else if (target == n2) {
+    } else if (target == n2) {
         return options[V2]/(options[V1]/options[n1]);
     }
     return 0;
